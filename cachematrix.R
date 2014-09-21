@@ -1,7 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## Functions to get and set the inverse of the matrix using the right scope.
 
 makeCacheMatrix <- function(z = matrix()) {
         i <- NULL
@@ -19,7 +17,7 @@ makeCacheMatrix <- function(z = matrix()) {
 
 
 
-## Write a short comment describing this function
+## This function gets a parameters, uses getinverse to see if the inverse exists, if it's not null uses the cached inverse, if not it calculates using the solve function and stores it.
 
 cacheSolve <- function(z, ...) {
         i <- z$getinverse()
